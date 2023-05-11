@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bg_image"
+            android:layout_width="410dp"
+            android:layout_height="360dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/string1" />
+
+        <RadioGroup
+            android:id="@+id/game"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sudoku"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio1"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="397dp" />
+
+            <RadioButton
+                android:id="@+id/magic_square"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio2"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="141dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/string2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="59dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camera"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_camera"
+                app:iconSize="20dp"
+                app:iconTint="@color/white"
+                app:iconTintMode="src_in"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="97dp" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallery"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_gallery"
+                app:iconSize="20dp"
+                app:iconTint="@color/white"
+                app:iconTintMode="src_in"
+                tools:layout_editor_absoluteX="162dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

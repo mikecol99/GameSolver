@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GameSolver</string>
+    <string name="retry">Retry</string>
+    <string name="solve">Solve</string>
+    <string name="takepicture">Take Picture</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="title_python">Python</string>
+    <string name="radio1">Sudoku</string>
+    <string name="radio2">Magic Square</string>
+    <string name="string1">Scegli il gioco da risolvere:</string>
+    <string name="string2">Prendi immagine da:</string>
+</resources>
